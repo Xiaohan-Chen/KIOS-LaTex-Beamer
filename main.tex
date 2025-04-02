@@ -1,0 +1,108 @@
+% Author: Xiaohan Chen
+% Time: 04.02.2025
+
+\documentclass[9pt]{beamer}
+\usetheme{CambridgeUS}
+\usefonttheme{default}
+
+\usepackage{hyperref}
+\usepackage{pifont}
+\usepackage{tikz}
+\usepackage{xcolor,multirow}
+
+\setbeamertemplate{theorems}[numbered]
+\setbeamertemplate{caption}[numbered]
+
+
+% ==== Define Color ====
+\definecolor{kiosred}{RGB}{209, 29, 49}
+\definecolor{kiosorange}{RGB}{245, 134, 18}
+\definecolor{ucyyellow}{RGB}{237, 166, 1}
+
+% === Primary Orange Palette ===
+\setbeamercolor{palette primary}{fg=white, bg=kiosred}  % Title bar
+\setbeamercolor{palette secondary}{fg=black, bg=white} % Headline
+\setbeamercolor{palette tertiary}{fg=white, bg=kiosorange}  % Current section
+
+% === Slide Elements ===
+\setbeamercolor{frametitle}{fg=kiosred, bg=white}       % Frame title
+\setbeamercolor{block title}{fg=white, bg=kiosred}      % Block header
+\setbeamercolor{block body}{bg=ucyyellow!15!white}                 % Block background
+\setbeamercolor{background canvas}{bg=white!95!kiosred}          % Slide background (light orange tint)
+
+% === Text & Alerts ===
+\setbeamercolor{normal text}{fg=black}                          % Default text
+\setbeamercolor{alerted text}{fg=kiosred}                  %\% \alert{} color
+
+\setbeamercolor{title}{fg=kiosred, bg=white!85!kiosred}      % Title color
+\setbeamercolor{subtitle}{fg=kiosred, bg=white}     % Subtitle color
+\setbeamerfont{title}{size=\huge}       % Title font (size/weight)
+\setbeamerfont{subtitle}{size=\large} % Subtitle font
+\setbeamerfont{frametitle}{size=\Large}
+\setbeamerfont{framesubtitle}{size=\large}
+
+% Title page
+\title[Short Title]{Title}
+\subtitle{Subtitle}
+
+\author[Author]{Author}
+
+\institute[KIOS CoE]{KISO Research and Innovation Center of Excellence \\
+University of Cyprus
+}
+
+\date{\today}
+
+\titlegraphic{
+	\begin{tikzpicture}[overlay,remember picture]
+	\node[left=0cm] at (current page.31){
+    	\includegraphics[width=1.5cm]{gov.png}
+	\includegraphics[width=1.5cm]{eu.png}
+	};
+	\end{tikzpicture}
+	\includegraphics[width=2.3cm]{KIOS.png}
+	\hspace{0.3cm}
+	\includegraphics[width=2.3cm]{UCY.jpg}
+	\hspace{0.3cm}
+	\includegraphics[width=2.3cm]{ICL.png}
+}
+
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%
+%	Start Document
+%%%%%%%%%%%%%%%%%%%%%%%%
+
+% title page
+\frame{\titlepage}
+
+% Presentation outline
+\begin{frame}{Content}
+    \tableofcontents[hideallsubsections]
+\end{frame}
+
+% Current section
+%\AtBeginSection[ ]
+%{
+%\begin{frame}{Content}
+%    \tableofcontents[currentsection]
+%\end{frame}
+%}
+
+%%%%%%%%%%%%
+\section{Section 1}
+
+\begin{frame}{Title}{Subtitle}
+
+
+\begin{block}{Block title}
+    It can be useful to treat some content differently by putting it into a block. This can be done by using blocks!
+\end{block}
+
+\begin{itemize}
+    \item Item 1 (orange bullet)
+    \item \alert{Alerted Item} (red text)
+\end{itemize}
+\end{frame}
+
+
+\end{document}
