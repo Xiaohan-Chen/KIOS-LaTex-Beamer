@@ -21,23 +21,24 @@
 \setbeamercolor{palette secondary}{fg=black, bg=white} % Headline
 \setbeamercolor{palette tertiary}{fg=white, bg=kiosorange}  % Current section
 
+% === Cover Page ===
+\setbeamercolor{title}{fg=kiosred, bg=white!85!kiosorange}      % Title color
+\setbeamercolor{subtitle}{fg=kiosred, bg=white}     % Subtitle color
+\setbeamerfont{title}{size=\huge, series=\bfseries}       % Title font (size/weight)
+\setbeamerfont{subtitle}{size=\large, series=\bfseries} % Subtitle font
+\setbeamerfont{institute}{size=\small}
+
 % === Slide Elements ===
 \setbeamercolor{frametitle}{fg=kiosred, bg=white}       % Frame title
-\setbeamercolor{block title}{fg=white, bg=kiosred}      % Block header
-\setbeamercolor{block body}{bg=ucyyellow!15!white}                 % Block background
+\setbeamercolor{block title}{fg=kiosred, bg=kiosred}      % Block header
+\setbeamercolor{block body}{bg=ucyyellow!10!white}                 % Block background
 \setbeamercolor{background canvas}{bg=white}
+\setbeamerfont{frametitle}{size=\Large, series=\bfseries}
+\setbeamerfont{framesubtitle}{size=\large, series=\mdseries}
 
 % === Text & Alerts ===
 \setbeamercolor{normal text}{fg=black}                          % Default text
 \setbeamercolor{alerted text}{fg=kiosred}                  %\% \alert{} color
-
-\setbeamercolor{title}{fg=kiosred, bg=white!85!kiosorange}      % Title color
-\setbeamercolor{subtitle}{fg=kiosred, bg=white}     % Subtitle color
-\setbeamerfont{title}{size=\huge, series=\bfseries}       % Title font (size/weight)
-\setbeamerfont{subtitle}{size=\large, series=\mdseries} % Subtitle font
-\setbeamerfont{institute}{size=\small}
-\setbeamerfont{frametitle}{size=\Large, series=\bfseries}
-\setbeamerfont{framesubtitle}{size=\large, series=\mdseries}
 
 % Title page
 \title[Short Title]{Title}
@@ -54,15 +55,15 @@ University of Cyprus
 \titlegraphic{
 	\begin{tikzpicture}[overlay,remember picture]
 	\node[left=0cm] at (current page.31){
-    	\includegraphics[width=1.5cm]{./imgs/gov.png}
-	\includegraphics[width=1.5cm]{./imgs/eu.png}
+    	\includegraphics[width=1.5cm]{gov.png}
+	\includegraphics[width=1.5cm]{eu.png}
 	};
 	\end{tikzpicture}
-	\includegraphics[width=2.3cm]{./imgs/KIOS.png}
+	\includegraphics[width=2.3cm]{KIOS.png}
 	\hspace{0.3cm}
-	\includegraphics[width=2.3cm]{./imgs/UCY.jpg}
+	\includegraphics[width=2.3cm]{UCY.jpg}
 	\hspace{0.3cm}
-	\includegraphics[width=2.3cm]{./imgs/ICL.png}
+	\includegraphics[width=2.3cm]{ICL.png}
 }
 
 \begin{document}
@@ -78,7 +79,6 @@ University of Cyprus
     \tableofcontents[hideallsubsections]
 \end{frame}
 
-% Current section
 %\AtBeginSection[ ]
 %{
 %\begin{frame}{Content}
