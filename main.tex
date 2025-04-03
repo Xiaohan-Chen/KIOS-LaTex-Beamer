@@ -1,6 +1,5 @@
 \documentclass[9pt]{beamer}
 \usetheme{CambridgeUS}
-\usefonttheme{default}
 
 \usepackage{hyperref}
 \usepackage{pifont}
@@ -30,7 +29,7 @@
 
 % === Slide Elements ===
 \setbeamercolor{frametitle}{fg=kiosred, bg=white}       % Frame title
-\setbeamercolor{block title}{fg=kiosred, bg=kiosred}      % Block header
+\setbeamercolor{block title}{fg=white, bg=kiosred}      % Block header
 \setbeamercolor{block body}{bg=ucyyellow!10!white}                 % Block background
 \setbeamercolor{background canvas}{bg=white}
 \setbeamerfont{frametitle}{size=\Large, series=\bfseries}
@@ -40,13 +39,14 @@
 \setbeamercolor{normal text}{fg=black}                          % Default text
 \setbeamercolor{alerted text}{fg=kiosred}                  %\% \alert{} color
 
+
 % Title page
 \title[Short Title]{Title}
 \subtitle{Subtitle}
 
 \author[Author]{Author}
 
-\institute[KIOS CoE]{KISO Research and Innovation Center of Excellence \\
+\institute[KIOS CoE]{KIOS Research and Innovation Center of Excellence \\
 University of Cyprus
 }
 
@@ -97,7 +97,7 @@ University of Cyprus
 \end{block}
 
 \begin{itemize}
-    \item Item 1 (orange bullet)
+    \item Item 1
     \item \alert{Alerted Item} (red text)
 \end{itemize}
 \end{frame}
