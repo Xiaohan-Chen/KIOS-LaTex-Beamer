@@ -34,12 +34,13 @@
 \setbeamercolor{normal text}{fg=black}                          % Default text
 \setbeamercolor{alerted text}{fg=kiosred}                  %\% \alert{} color
 
-\setbeamercolor{title}{fg=kiosred, bg=white!85!kiosred}      % Title color
+\setbeamercolor{title}{fg=kiosred, bg=white!85!kiosorange}      % Title color
 \setbeamercolor{subtitle}{fg=kiosred, bg=white}     % Subtitle color
 \setbeamerfont{title}{size=\huge}       % Title font (size/weight)
 \setbeamerfont{subtitle}{size=\large} % Subtitle font
-\setbeamerfont{frametitle}{size=\Large}
-\setbeamerfont{framesubtitle}{size=\large}
+\setbeamerfont{institute}{size=\small}
+\setbeamerfont{frametitle}{size=\Large, series=\bfseries}
+\setbeamerfont{framesubtitle}{size=\large, series=\mdseries}
 
 % Title page
 \title[Short Title]{Title}
@@ -56,15 +57,15 @@ University of Cyprus
 \titlegraphic{
 	\begin{tikzpicture}[overlay,remember picture]
 	\node[left=0cm] at (current page.31){
-    	\includegraphics[width=1.5cm]{gov.png}
-	\includegraphics[width=1.5cm]{eu.png}
+    	\includegraphics[width=1.5cm]{./imgs/gov.png}
+	\includegraphics[width=1.5cm]{./imgs/eu.png}
 	};
 	\end{tikzpicture}
-	\includegraphics[width=2.3cm]{KIOS.png}
+	\includegraphics[width=2.3cm]{./imgs/KIOS.png}
 	\hspace{0.3cm}
-	\includegraphics[width=2.3cm]{UCY.jpg}
+	\includegraphics[width=2.3cm]{./imgs/UCY.jpg}
 	\hspace{0.3cm}
-	\includegraphics[width=2.3cm]{ICL.png}
+	\includegraphics[width=2.3cm]{./imgs/ICL.png}
 }
 
 \begin{document}
